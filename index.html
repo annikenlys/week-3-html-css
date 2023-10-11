@@ -3,14 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta >
-    <title></title>
-    <link >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Box Model ::</title>
+<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+    <style>
+        .div-1 {
+            background-color: rebeccapurple;
+            width: 100px;
+            height: 100px;
+            /*Padding = how much space around the
+              content (in this case the text one)*/
+            padding: 25px 10px;
+
+            /*Margin = content around/outside the border
+            (will put space between the borders of the elements/contents) \*/
+
+            /*margin: 15px;*/
+
+            /*This margin is the same as to/bottom/right/left/*/
+
+            /*margin-top: 15px;*/
+            /*margin-bottom: 15px;*/
+            /*margin-right: 15px;*/
+            /*margin-left: 15px;*/
+            margin: 15px 25px 15px 15px;
+            border: 10px solid yellowgreen;
+            /*border-box will calculate the padding/border/margin
+              to be the size of the width (100px in this case) and height (100px)
+              (it will not scale)*/
+            box-sizing: border-box;
+        }
+        .div-2 {
+            margin: 10px;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
 </head>
 <body>
-    <header>
-
-    </header>
+    <div class="div-1">One</div>
+    <div class="div-2">Two</div>
 </body>
 
 </html>

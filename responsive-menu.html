@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <script src="https://kit.fontawesome.com/301ec7e323.js" crossorigin="anonymous"></script>
+    <style>
+
+        * {
+         box-sizing: border-box;
+            font-family: "Javanese Text", serif;
+        }
+
+        header i {
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            position: sticky;
+            top: 0;
+            border-radius: 8px;
+            padding: 8px 16px;
+        }
+
+        nav {
+            display: none;
+            background-color: black;
+            border-radius: 8px;
+        }
+
+        nav li {
+            padding: 8px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        label {
+            font-size: 38px;
+        }
+
+        #menu-checkbox:checked ~ nav {
+            display: block;
+        }
+
+        #menu-checkbox {
+            display: none;
+        }
+
+        /* Small (sm) */
+        @media (min-width: 640px) {
+            /* Your styles for the medium breakpoint here */
+        }
+
+        /* Medium (md) */
+        @media (min-width: 768px) {
+
+            nav {
+                display: block;
+            }
+            header label {
+                display: none;
+            }
+
+            nav li {
+                display: inline-block;
+            }
+
+            nav li a:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        /* Large (lg) */
+        @media (min-width: 1024px) {
+            /* Your styles for the large breakpoint here */
+        }
+
+        /* Extra Large (xl) */
+        @media (min-width: 1280px) {
+            /* Your styles for the extra large breakpoint here */
+        }
+
+        /* 2XL (2xl) */
+        @media (min-width: 1536px) {
+            /* Your styles for the 2XL breakpoint here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-checkbox"/>
+        <label for="menu-checkbox"><i class="fa-solid fa-bars"></i></label>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome Witches</h1>
+        <p>
+            Eos ei quodsi omnesque corrumpit. Diam numquam salutandi ut quo, tation postulant te vix. Sit ea omittam
+            expetenda, dolores nominati mei et. Duo ut cibo ubique indoctum, corrumpit incorrupte elaboraret nam ut, ius
+            elaboraret scriptorem id. Ut mel stet petentium splendide, dolorem quaestio intellegat eu mel, error virtute
+            expetenda vim in. Cibo ancillae phaedrum ut eos, cum odio molestiae constituam ea, suas veniam praesent est
+            at.
+        </p>
+        <p>
+            Eos ei quodsi omnesque corrumpit. Diam numquam salutandi ut quo, tation postulant te vix. Sit ea omittam
+            expetenda, dolores nominati mei et. Duo ut cibo ubique indoctum, corrumpit incorrupte elaboraret nam ut, ius
+            elaboraret scriptorem id. Ut mel stet petentium splendide, dolorem quaestio intellegat eu mel, error virtute
+            expetenda vim in. Cibo ancillae phaedrum ut eos, cum odio molestiae constituam ea, suas veniam praesent est
+            at.
+        </p>
+        <p>
+            Eos ei quodsi omnesque corrumpit. Diam numquam salutandi ut quo, tation postulant te vix. Sit ea omittam
+            expetenda, dolores nominati mei et. Duo ut cibo ubique indoctum, corrumpit incorrupte elaboraret nam ut, ius
+            elaboraret scriptorem id. Ut mel stet petentium splendide, dolorem quaestio intellegat eu mel, error virtute
+            expetenda vim in. Cibo ancillae phaedrum ut eos, cum odio molestiae constituam ea, suas veniam praesent est
+            at.
+        </p>
+        <p>
+            Eos ei quodsi omnesque corrumpit. Diam numquam salutandi ut quo, tation postulant te vix. Sit ea omittam
+            expetenda, dolores nominati mei et. Duo ut cibo ubique indoctum, corrumpit incorrupte elaboraret nam ut, ius
+            elaboraret scriptorem id. Ut mel stet petentium splendide, dolorem quaestio intellegat eu mel, error virtute
+            expetenda vim in. Cibo ancillae phaedrum ut eos, cum odio molestiae constituam ea, suas veniam praesent est
+            at.
+        </p>
+        <p>
+            Eos ei quodsi omnesque corrumpit. Diam numquam salutandi ut quo, tation postulant te vix. Sit ea omittam
+            expetenda, dolores nominati mei et. Duo ut cibo ubique indoctum, corrumpit incorrupte elaboraret nam ut, ius
+            elaboraret scriptorem id. Ut mel stet petentium splendide, dolorem quaestio intellegat eu mel, error virtute
+            expetenda vim in. Cibo ancillae phaedrum ut eos, cum odio molestiae constituam ea, suas veniam praesent est
+            at.
+        </p>
+        <p>
+            Eos ei quodsi omnesque corrumpit. Diam numquam salutandi ut quo, tation postulant te vix. Sit ea omittam
+            expetenda, dolores nominati mei et. Duo ut cibo ubique indoctum, corrumpit incorrupte elaboraret nam ut, ius
+            elaboraret scriptorem id. Ut mel stet petentium splendide, dolorem quaestio intellegat eu mel, error virtute
+            expetenda vim in. Cibo ancillae phaedrum ut eos, cum odio molestiae constituam ea, suas veniam praesent est
+            at.
+        </p>
+    </main>
+</body>
+</html>

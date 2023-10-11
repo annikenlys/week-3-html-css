@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+
+    <style>
+        /*RANKING
+         1. !important (NB! only for emergency!)
+         2. ID
+         3. CLASS
+         4. Selector (h2, p, etc.)
+         */
+
+        /*1, 0, 0, 0*/
+        h2 {
+            color: orange !important;
+        }
+
+        /*0, 1, 0, 0*/
+        #header-id {
+            color: blue;
+        }
+
+        /*0, 0, 1, 0*/
+        .header {
+            color: green;
+        }
+
+        /*0, 0, 0, 1*/
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="header-id" class="header">
+        Lorem ipsum dolor sit amet
+    </h2>
+
+    <p id="paragraph-id" class="header">
+        Ex singulis laboramus vel. Eos affert nonumes iracundia ut, quo nisl accusam platonem ea, nullam option
+        scriptorem ex pro. Natum option voluptaria qui cu. In quis porro dolore ius. Minimum repudiare dissentiunt sed
+        eu, an vix labitur nominati, id solum putent prodesset eum.
+    </p>
+</body>
+
+</html>

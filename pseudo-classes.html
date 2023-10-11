@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>::: Pseudo Classes :::</title>
+    <style>
+        button:hover {
+            background-color: crimson;
+        }
+
+        button:focus {
+            background-color: dodgerblue;
+        }
+
+        #email:disabled {
+            background-color: chocolate;
+        }
+
+        #name:required {
+            background-color: gold;
+        }
+
+        /*li:nth-child(even) {*/
+        /*    color: lightgreen;*/
+        /*    background-color: violet;*/
+        /*}*/
+
+        /*li:nth-child(odd) {*/
+        /*    color: violet;*/
+        /*    background-color: lightgreen;*/
+        /*}*/
+
+        /*!*I want to select every second child*!*/
+        li:nth-child(2n) {
+            color: green;
+        }
+
+        /*If you want to skip the first one*/
+        li:nth-child(2n +1) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" disabled/>
+    </div>
+
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required/>
+    </div>
+
+    <button type="submit" class="submit">
+        Click me to send me to heaven
+    </button>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+</body>
+</html>
