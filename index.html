@@ -3,14 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta >
-    <title></title>
-    <link >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document Flow</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .div-1 {
+            background-color: red;
+        }
+
+        .span-1 {
+            background-color: green;
+            display: inline-block;
+            width: 150px;
+        }
+
+        .span-2 {
+            background-color: blue;
+            width: 200px;
+        }
+
+        .div-2 {
+            background-color: yellow;
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
 
-    </header>
+    <div class="div-1">I am Div</div>
+    <span class="span-1">I am Span</span>
+    <button class="btn-1">I am Button</button>
+    <span class="span-2">I am another Span</span>
+    <div class="div-2">I am another Div</div>
+
 </body>
 
 </html>
