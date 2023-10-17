@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>:: position :: </title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 2rem;
+        }
+
+        body {
+            height: 500vh;
+        }
+
+        .parent {
+            background-color: darkorange;
+            padding: .25rem;
+            height: 100%;
+
+            position: relative;
+            /* Position Relative
+               makes the parent the zero
+               point, instead of the html tag
+               (the default 0 point)
+               -> the children will now follow
+               the parents zero point */
+        }
+
+        .child1 {
+            background-color: #AA1111;
+            padding: .25rem;
+
+            position: relative;
+            top: -16px;
+            left: 30px;
+            right: 20px;
+            bottom: 16px;
+        }
+
+        .child2 {
+            background-color: #00AA88;
+            padding: .25rem;
+
+            position: absolute;
+            top: 30px;
+            left: 200px;
+        }
+
+        .child3 {
+            background-color: #7D889E;
+            padding: .25rem;
+
+            /*position: fixed;*/
+            /*Makes the object stay in
+            its position on the screen
+            when you scroll*/
+            /*top: 230px;*/
+
+            position: sticky;
+            /*It is positioned relative
+            until a given offset position
+            is met in the viewport
+            - then it "sticks" in place
+            (like position:fixed)*/
+
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child1">One</div>
+        <div class="child2">Two</div>
+        <div class="child3">Three</div>
+    </div>
+</body>
+</html>
